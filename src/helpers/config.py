@@ -6,7 +6,7 @@ class Setttings(BaseSettings):
     VERSION:str
     FILE_ALLOWED_TYPES:list
     FILE_MAX_SIZE:int
-
+    CHUNK_SIZE:int
     class Config:
         env_file ='.env'
 
