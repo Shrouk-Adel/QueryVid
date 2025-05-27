@@ -24,11 +24,9 @@ async def upload_data(video_id:str,video:UploadFile):
                 'signal':signal
             }
         
-        video_name =video.filename
-        video_dir =VideoPathController().get_file_dir(video_id=video_id)
-        full_video_dir =os.path.join(video_dir,video_name)
+        file_path =DataController().process_vedio_name(video=video,video_id=video_id)
 
-        async with aiofiles.open(full_video_dir,'wb')  as f:
+        async with aiofiles.open(file_path,'wb')  as f:
               while chunk:=await video.read(App_settings.CHUNK_SIZE):
                     await f.write(chunk)
            
