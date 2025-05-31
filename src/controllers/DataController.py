@@ -31,7 +31,7 @@ class DataController(BaseController):
             random_key+'_'+cleaned_name
         )
 
-        return cleaned_file_path
+        return cleaned_file_path,random_key+'_'+cleaned_name
 
     def clean_name_vedio(self,vedio:UploadFile):
         orignal_vedio_name=vedio.filename
