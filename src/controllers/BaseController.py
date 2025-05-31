@@ -9,6 +9,7 @@ class BaseController:
         self.App_settings =get_settings()
         self.base_dir =os.path.dirname(os.path.dirname(__file__))
         self.files_dir =os.path.join(self.base_dir,'assets/files')
+        self.audio_dir =os.path.join(self.base_dir,'/assets/Audio')
 
     def genrate_random_names(self,length=12):
         return ''.join(random.choices(string.ascii_lowercase+string.digits,k=length))
