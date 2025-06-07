@@ -1,1 +1,2 @@
-from .Enums.enumerations import ResponseSingal
+from .Enums.ProcessEnum import ProcessEnum
+from .Enums.ResponseEnum import ResponseSingal

@@ -8,4 +8,13 @@ langchain==0.3.25
 PyMuPDF==1.26.0
 langchain-community==0.3.24
 motor==3.7.1
-moviepy==2.2.1
+groq==0.26.0
+faster-whisper==1.1.1
+unstructured==0.17.2
+python-pptx==0.4.1
+unicode==2.9
+python-pptx==0.6.23
+"unstructured[ppt]"
+"unstructured[all-docs]"
+
+
