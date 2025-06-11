@@ -7,7 +7,8 @@ class Setttings(BaseSettings):
     FILE_MAX_SIZE:int
     CHUNK_SIZE:int
     GROK_API_KEY:str
-    STT_LLM:str
+    MONGODB_DATABASE =str
+    MONGO_URL=str
     class Config:
         env_file ='.env'
 

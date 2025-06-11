@@ -4,7 +4,7 @@ from bson.objectid import ObjectId
 
 
 class ChunkData(BaseModel):
-    _id :Optional[ObjectId]
+    id :Optional[ObjectId]=Field(alias='_id')
     chunk_text:str=Field(...,)
     chunk_metadata:dict
     chunk_project_id :ObjectId

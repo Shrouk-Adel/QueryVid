@@ -6,3 +6,6 @@ class ResponseSingal(Enum):
     FILE_TYPE_NOT_VALID ="file type not valid"
     FILE_SIZE_EXCEEDED='file type exeeded'
     FILE_UPLOADED_SUCCSESS ='file uploaded successfully'
+    FILE_PROCESSD_SUCCESS ='file processed successfully'
+    FILE_PROCESSD_FALID ='file processed failed'
+    
